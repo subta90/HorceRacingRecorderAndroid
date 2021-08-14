@@ -1,7 +1,8 @@
-package com.example.horceracingrecorderandroid
+package com.example.horceracingrecorderandroid.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.horceracingrecorderandroid.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
