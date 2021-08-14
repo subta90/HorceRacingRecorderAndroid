@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/race_record_list" >
+
+    <fragment
+        android:id="@+id/race_record_list"
+        android:name="com.example.horceracingrecorderandroid.fragment.racerecordlist.RaceRecordListFragment"
+        android:label="RaceRecordList" />
+
+    <fragment
+        android:id="@+id/race_analysis"
+        android:name="com.example.horceracingrecorderandroid.fragment.raceanalysis.RaceAnalysisFragment"
+        android:label="RaceAnalysis" />
+
+</navigation>
