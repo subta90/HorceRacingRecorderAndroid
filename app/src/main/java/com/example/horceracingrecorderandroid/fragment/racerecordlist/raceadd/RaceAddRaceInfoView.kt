@@ -15,7 +15,10 @@ class RaceAddRaceInfoView(context: Context, attrs: AttributeSet) : ConstraintLay
         ViewRaceAddRaceInfoBinding.inflate(LayoutInflater.from(context), this, true)
 
     init {
-        val gradeAdapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, GradeType.values())
+        val gradeNames = GradeType.values().map {
+            it.gradeName()
+        }
+        val gradeAdapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, gradeNames)
         binding.raceNameGradeSpinner.adapter = gradeAdapter
     }
 
