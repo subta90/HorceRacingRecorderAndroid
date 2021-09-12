@@ -42,4 +42,8 @@ enum class BettingSelectionType {
         }
     };
     abstract fun bettingSelectionName(): String
+
+    companion object {
+        val list: Array<BettingSelectionType> = BettingSelectionType.values()
+    }
 }
