@@ -2,16 +2,27 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/race_record_list" >
+    app:startDestination="@id/race_record_list">
 
     <fragment
         android:id="@+id/race_record_list"
         android:name="com.example.horceracingrecorderandroid.fragment.racerecordlist.RaceRecordListFragment"
-        android:label="RaceRecordList" />
+        android:label="RaceRecordList">
+        <action
+            android:id="@+id/action_race_record_list_to_raceAddFragment"
+            app:destination="@id/raceAddFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
 
     <fragment
         android:id="@+id/race_analysis"
         android:name="com.example.horceracingrecorderandroid.fragment.raceanalysis.RaceAnalysisFragment"
         android:label="RaceAnalysis" />
+
+    <fragment
+        android:id="@+id/raceAddFragment"
+        android:name="com.example.horceracingrecorderandroid.fragment.racerecordlist.raceadd.RaceAddFragment"
+        android:label="RaceAddFragment" />
 
 </navigation>

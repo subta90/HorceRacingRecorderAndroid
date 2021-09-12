@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HorceRacingRecorderAndroid</string>
+    <string name="add_race_name_hint">レース名を入力</string>
+    <string name="add_betting_ticket">馬券追加</string>
+    <string name="betting_selection_next">次へ</string>
+    <string name="betting_selection_title">式別を選択してください</string>
 </resources>
