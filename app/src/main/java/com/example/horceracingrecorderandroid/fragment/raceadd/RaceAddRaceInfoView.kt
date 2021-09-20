@@ -1,9 +1,8 @@
-package com.example.horceracingrecorderandroid.fragment.racerecordlist.raceadd
+package com.example.horceracingrecorderandroid.fragment.raceadd
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import android.view.View
 import android.widget.ArrayAdapter
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.horceracingrecorderandroid.databinding.ViewRaceAddRaceInfoBinding

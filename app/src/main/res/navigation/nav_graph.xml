@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/race_record_list">
 
@@ -22,7 +23,16 @@
 
     <fragment
         android:id="@+id/raceAddFragment"
-        android:name="com.example.horceracingrecorderandroid.fragment.racerecordlist.raceadd.RaceAddFragment"
-        android:label="RaceAddFragment" />
+        android:name="com.example.horceracingrecorderandroid.fragment.raceadd.RaceAddFragment"
+        android:label="RaceAddFragment" >
+        <action
+            android:id="@+id/action_raceAddFragment_to_addBettingTicketWinFragment"
+            app:destination="@id/addBettingTicketWinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBettingTicketWinFragment"
+        android:name="com.example.horceracingrecorderandroid.fragment.raceadd.betting_ticket.AddBettingTicketWinFragment"
+        android:label="fragment_add_betting_ticket_win"
+        tools:layout="@layout/fragment_add_betting_ticket_win" />
 
 </navigation>

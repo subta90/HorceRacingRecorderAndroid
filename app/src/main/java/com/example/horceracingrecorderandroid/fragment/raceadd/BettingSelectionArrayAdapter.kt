@@ -1,4 +1,4 @@
-package com.example.horceracingrecorderandroid.fragment.racerecordlist.raceadd
+package com.example.horceracingrecorderandroid.fragment.raceadd
 
 import android.content.Context
 import android.view.LayoutInflater

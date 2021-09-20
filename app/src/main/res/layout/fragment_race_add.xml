@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.horceracingrecorderandroid.fragment.racerecordlist.raceadd.RaceAddRaceInfoView
+    <com.example.horceracingrecorderandroid.fragment.raceadd.RaceAddRaceInfoView
         android:id="@+id/race_info_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

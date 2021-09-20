@@ -1,4 +1,4 @@
-package com.example.horceracingrecorderandroid.fragment.racerecordlist.raceadd
+package com.example.horceracingrecorderandroid.fragment.raceadd
 
 import android.app.AlertDialog
 import android.content.DialogInterface
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.horceracingrecorderandroid.R
 import com.example.horceracingrecorderandroid.databinding.FragmentRaceAddBinding
 import com.example.horceracingrecorderandroid.enum.BettingSelectionType
@@ -48,9 +49,12 @@ class RaceAddFragment : Fragment() {
             })
 
             setPositiveButton(getString(R.string.betting_selection_next),
-                DialogInterface.OnClickListener { dialog, id ->
+                DialogInterface.OnClickListener { _, _ ->
                     // TODO: 式別に応じた画面に遷移
+                    val action = RaceAddFragmentDirections.actionRaceAddFragmentToAddBettingTicketWinFragment()
+                    view?.findNavController()?.navigate(action)
                 })
+
             setNegativeButton("キャンセル",
                 DialogInterface.OnClickListener { dialog, id ->
 

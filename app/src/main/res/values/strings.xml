@@ -4,4 +4,8 @@
     <string name="add_betting_ticket">馬券追加</string>
     <string name="betting_selection_next">次へ</string>
     <string name="betting_selection_title">式別を選択してください</string>
+    <string name="add_betting_ticket_description">馬券情報を入力</string>
+    <string name="frame_number_title">枠</string>
+    <string name="horse_number_title">馬番</string>
+    <string name="add_betting_horse_name_edit_text_hint">馬名を入力</string>
 </resources>
